@@ -1,14 +1,11 @@
+import JobList from './component/JobList';
 
-import React from 'react';
-import JobList from '../component/JobList';
-
-const JobPage = () => {
+const HomePage = () => {
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>All Job Listings</h1>
-      <JobList />
+    <div className="container">
+     <JobList/>
     </div>
   );
 };
 
-export default JobPage;
+export default HomePage;

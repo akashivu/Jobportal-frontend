@@ -1,4 +1,4 @@
-
+import './joblist.css'
 import React, { useEffect, useState } from 'react';
 import { getAllJobs, searchJobs } from '../service/JobService';
 import JobCard from '../component/JobCard';
@@ -32,11 +32,11 @@ const JobList = () => {
   };
 
   return (
-    <div>
+    <div className="cont">
       <SearchBar onSearch={handleSearch} />
-      <h2>Available Jobs</h2>
+      <h2 className="heading">Available Jobs</h2>
       {jobs.length === 0 ? (
-        <p>No jobs available.</p>
+        <p className="job">No jobs available.</p>
       ) : (
         jobs.map((job) => <JobCard key={job.id} job={job} />)
       )}
