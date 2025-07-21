@@ -12,14 +12,5 @@ const JobCard = ({ job }) => {
   );
 };
 
-const styles = {
-  card: {
-    border: '1px solid #ddd',
-    borderRadius: '8px',
-    padding: '16px',
-    marginBottom: '12px',
-    boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
-  },
-};
 
 export default JobCard;
