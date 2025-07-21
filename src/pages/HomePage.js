@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { postJob } from "../service/JobService";
-const JobPortal = () => {
+const HomePage = () => {
   return (
     <div className="grid grid-rows-[auto_1fr_auto] min-h-screen bg-blue-900 text-white font-sans">
      
@@ -47,13 +47,13 @@ const JobPortal = () => {
       <footer className="bg-blue-800 px-6 py-4 flex flex-wrap justify-between items-center text-sm">
         <div>© 2024 JobPortal</div>
         <div className="space-x-4">
-          <a href="#" className="hover:underline">Privacy</a>
-          <a href="#" className="hover:underline">Terms</a>
-          <a href="#" className="hover:underline">Contact</a>
+          <a href="#home" className="hover:underline">Privacy</a>
+          <a href="#home" className="hover:underline">Terms</a>
+          <a href="#home" className="hover:underline">Contact</a>
         </div>
       </footer>
     </div>
   );
 };
 
-export default JobPortal;
+export default HomePage;

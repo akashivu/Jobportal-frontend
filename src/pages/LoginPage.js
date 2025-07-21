@@ -58,7 +58,7 @@ const LoginPage = () => {
           />
 
           <div className="text-right text-sm">
-            <a href="#" className="text-blue-400 hover:underline">Forgot password?</a>
+            <a href="home" className="text-blue-400 hover:underline">Forgot password?</a>
           </div>
 
           <button
@@ -79,9 +79,9 @@ const LoginPage = () => {
         <div className="text-xs border-t border-gray-600 pt-4 space-y-1">
           <p>© 2024 JobPortal</p>
           <div className="flex justify-center space-x-4">
-            <a href="#" className="text-blue-400 hover:underline">Privacy</a>
-            <a href="#" className="text-blue-400 hover:underline">Terms</a>
-            <a href="#" className="text-blue-400 hover:underline">Contact</a>
+            <a href="home" className="text-blue-400 hover:underline">Privacy</a>
+            <a href="home" className="text-blue-400 hover:underline">Terms</a>
+            <a href="home" className="text-blue-400 hover:underline">Contact</a>
           </div>
         </div>
       </div>
