@@ -32,7 +32,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a23] text-white flex items-center justify-center px-4 font-sans">
+    <div className="min-h-screen bg-white text-white flex items-center justify-center px-4 font-sans">
       <div className="bg-[#1a1a3d] w-full max-w-sm rounded-xl shadow-lg p-6 text-center space-y-6">
         <h1 className="text-3xl font-bold">Login</h1>
 
@@ -79,9 +79,9 @@ const LoginPage = () => {
         <div className="text-xs border-t border-gray-600 pt-4 space-y-1">
           <p>© 2024 JobPortal</p>
           <div className="flex justify-center space-x-4">
-            <a href="home" className="text-blue-400 hover:underline">Privacy</a>
-            <a href="home" className="text-blue-400 hover:underline">Terms</a>
-            <a href="home" className="text-blue-400 hover:underline">Contact</a>
+            <a href="/" className="text-blue-400 hover:underline">Privacy</a>
+            <a href="/" className="text-blue-400 hover:underline">Terms</a>
+            <a href="/" className="text-blue-400 hover:underline">Contact</a>
           </div>
         </div>
       </div>
