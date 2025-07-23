@@ -1,47 +1,46 @@
-# Job Portal Frontend
+# Job Portal - Frontend
 
-This is the frontend of a **Job Portal** web application built using **React.js** and **Tailwind CSS**. It allows users to log in and explore the platform with a responsive and clean UI.
+Frontend for the Job Portal application built with React.js. Supports user and recruiter roles with secure login, job posting, search, and apply features.
 
----
+##  Features
 
-## Screenshot
-
-![Homepage](./src/assets/homepage.png)
-
----
+- JWT Authentication
+- Role-based routing (`RECRUITER`, `USER`)
+- Post, View, Apply for Jobs
+- Job Search & Filter
+- Responsive UI with React
 
 ## Tech Stack
 
-- **React.js**  
-- **Tailwind CSS**  
-- **React Router DOM**
+- React.js
+- React Router
+- Axios
+- Bootstrap / Tailwind (if used)
 
----
+## Folder Structure
 
-##  Features Implemented
+- `pages/` – Main pages like Login, Register, Jobs, Dashboard
+- `components/` – Navbar, JobCard, ProtectedRoute, etc.
+- `services/` – Axios API logic
 
-- Login Page with authentication UI  
-- Home Page design  
-- Routing between pages  
-- Responsive UI using Tailwind
+## Auth Flow
 
----
+- Login -> JWT token saved in localStorage
+- Axios used for backend calls with Authorization headers
+- Role-based rendering and protected routes
 
-## Features Coming Soon
+##  Key Routes
 
-- Registration Page  
-- Job Posting Form  
-- Job Listings and Filters  
-- Role-based Access (Recruiter/User)  
-- Backend Integration with Spring Boot
+| Path            | Role       | Description        |
+|-----------------|------------|--------------------|
+| `/login`        | All        | Login Page         |
+| `/register`     | All        | Register Page      |
+| `/jobs`         | User       | View Jobs          |
+| `/dashboard`    | Recruiter  | Manage Jobs        |
 
----
-
-## Getting Started
-
-### 1. Clone the Repository
+##  Run Locally
 
 ```bash
-git clone https://github.com/your-username/job-portal-frontend.git
-cd job-portal-frontend
+npm install
+npm start
 
