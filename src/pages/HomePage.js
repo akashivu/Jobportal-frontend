@@ -4,15 +4,15 @@ const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col font-sans bg-gradient-to-b from-blue-900 to-blue-800 text-white">
       
-      {/* Header */}
+      
       <header className="bg-blue-900/90 backdrop-blur-md px-8 py-4 flex justify-between items-center shadow-md sticky top-0 z-50">
         <h1 className="text-3xl font-bold tracking-wide">JobPortal</h1>
         <div className="flex items-center space-x-6">
           <nav className="flex space-x-6 text-white text-lg">
-            <a href="#" className="hover:text-green-400 transition">Home</a>
-            <a href="#" className="hover:text-green-400 transition">Jobs</a>
-            <a href="#" className="hover:text-green-400 transition">Companies</a>
-            <a href="#" className="hover:text-green-400 transition">About</a>
+            <a href="#home" className="hover:text-green-400 transition">Home</a>
+            <a href="#dashboard" className="hover:text-green-400 transition">Jobs</a>
+            <a href="#login" className="hover:text-green-400 transition">Companies</a>
+            <a href="#register" className="hover:text-green-400 transition">About</a>
           </nav>
           <Link
             to="/login"
@@ -23,10 +23,10 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+ 
       <main className="flex-1 flex flex-col md:flex-row items-center justify-between px-8 py-16 gap-10">
         
-        {/* Left side - Search bar and text */}
+        
         <div className="flex-1 flex flex-col items-center md:items-start space-y-6">
           
           
