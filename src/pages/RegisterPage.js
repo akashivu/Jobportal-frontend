@@ -19,16 +19,17 @@ const RegisterPage = () => {
     setIsLoading(true);
 
     try {
-      const result = await registerUser(userData);
-      setSuccessMsg("Registration successful! Redirecting to login...");
-      setUserData({ name: "", email: "", password: "" });
+  await registerUser(userData); // no unused variable
 
-      setTimeout(() => navigate("/login"), 2000);
-    } catch (error) {
-      setErrorMsg(error.response?.data?.message || "Registration failed. Please try again.");
-    } finally {
-      setIsLoading(false);
-    }
+  setSuccessMsg("Registration successful! Redirecting to login...");
+  setUserData({ name: "", email: "", password: "" });
+
+  setTimeout(() => navigate("/login"), 2000);
+} catch (error) {
+  setErrorMsg(error.response?.data?.message || "Registration failed. Please try again.");
+} finally {
+  setIsLoading(false);
+}
   };
 
   return (

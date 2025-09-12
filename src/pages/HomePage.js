@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-gradient-to-b from-blue-900 to-blue-800 text-white">
+    <div className="min-h-screen flex flex-col font-sans bg-gradient-to-b from-white to-gray-200 text-white">
       
       
       <header className="bg-blue-900/90 backdrop-blur-md px-8 py-4 flex justify-between items-center shadow-md sticky top-0 z-50">
         <h1 className="text-3xl font-bold tracking-wide">JobPortal</h1>
         <div className="flex items-center space-x-6">
           <nav className="flex space-x-6 text-white text-lg">
-            <a href="#home" className="hover:text-green-400 transition">Home</a>
-            <a href="#dashboard" className="hover:text-green-400 transition">Jobs</a>
-            <a href="#login" className="hover:text-green-400 transition">Companies</a>
-            <a href="#register" className="hover:text-green-400 transition">About</a>
-          </nav>
+  <Link to="/" className="hover:text-green-400 transition">Home</Link>
+  <Link to="/jobs" className="hover:text-green-400 transition">Jobs</Link>
+  <Link to="/companies" className="hover:text-green-400 transition">Companies</Link>
+  <Link to="/about" className="hover:text-green-400 transition">About</Link>
+</nav>
           <Link
             to="/login"
             className="bg-green-500 hover:bg-green-600 transition px-5 py-2 rounded-md font-medium shadow-md"
@@ -69,10 +69,10 @@ const HomePage = () => {
       <footer className="bg-blue-900/90 backdrop-blur-md px-8 py-6 flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm mt-auto">
         <div>© 2024 JobPortal</div>
         <div className="flex space-x-6 mt-2 md:mt-0">
-          <a href="#privacy" className="hover:text-green-400 transition">Privacy</a>
-          <a href="#terms" className="hover:text-green-400 transition">Terms</a>
-          <a href="#contact" className="hover:text-green-400 transition">Contact</a>
-        </div>
+  <Link to="/privacy" className="hover:text-green-400 transition">Privacy</Link>
+  <Link to="/terms" className="hover:text-green-400 transition">Terms</Link>
+  <Link to="/contact" className="hover:text-green-400 transition">Contact</Link>
+</div>
       </footer>
     </div>
   );
