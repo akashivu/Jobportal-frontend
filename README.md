@@ -72,6 +72,7 @@ Supports **User** and **Recruiter** roles with secure login, job posting, job se
 
 ##  Run Locally
 
+
 ```bash
 # Install dependencies
 npm install
