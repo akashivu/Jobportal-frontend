@@ -19,7 +19,7 @@ const RegisterPage = () => {
     setIsLoading(true);
 
     try {
-  await registerUser(userData); // no unused variable
+  await registerUser(userData); 
 
   setSuccessMsg("Registration successful! Redirecting to login...");
   setUserData({ name: "", email: "", password: "" });

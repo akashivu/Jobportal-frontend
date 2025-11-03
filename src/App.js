@@ -6,7 +6,7 @@ import RegisterPage from './pages/RegisterPage';
 import LoginPage from "./pages/LoginPage";
 import HomePage from './pages/HomePage';
 import JobPage from "./pages/JobPage";
-
+import JobList from './component/JobList';
 function App() {
   return (
     <Router>
@@ -18,6 +18,8 @@ function App() {
           <Route path="/dashboard" element={<JobForm />} />
           <Route path="/register" element={<RegisterPage />} />
            <Route path="/jobs" element={<JobPage />} />
+            <Route path="/joblist" element={<JobList />} />
+
         
         </Routes>
       </div>

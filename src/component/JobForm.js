@@ -94,7 +94,7 @@ const JobForm = () => {
         </div>
       </div>
 
-      {/* Right side illustration */}
+     
       <div className="relative z-10 hidden md:flex flex-1 justify-center items-center px-8">
         <img
             src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
