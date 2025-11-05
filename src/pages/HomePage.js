@@ -26,7 +26,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-800">
-      {/* Header */}
+     
       <header className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md px-6 py-4 shadow-sm sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">
@@ -49,11 +49,11 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+     
       <main className="flex-1 px-6 py-16 md:py-24">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
+           
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full">
@@ -72,7 +72,7 @@ const HomePage = () => {
                 </p>
               </div>
 
-              {/* Search Bar */}
+             
               <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-4 border border-slate-200 dark:border-slate-700">
                 <div className="flex flex-col md:flex-row gap-3">
                   <div className="flex-1 relative">
@@ -107,7 +107,7 @@ const HomePage = () => {
                 </div>
               </div>
 
-              {/* Popular Categories */}
+              
               <div className="space-y-3">
                 <p className="text-sm font-medium text-slate-600 dark:text-slate-400">
                   Popular Categories:
@@ -126,7 +126,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            {/* Right Image */}
+           
             <div className="hidden md:block">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-2xl blur-2xl opacity-20"></div>
@@ -139,7 +139,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Stats Section */}
+          
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
             {stats.map(({ icon: Icon, value, label }) => (
               <div
@@ -165,7 +165,7 @@ const HomePage = () => {
         </div>
       </main>
 
-      {/* Footer */}
+      
       <footer className="bg-slate-100 dark:bg-slate-900 px-6 py-8 border-t border-slate-200 dark:border-slate-800">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-slate-600 dark:text-slate-400 text-sm">

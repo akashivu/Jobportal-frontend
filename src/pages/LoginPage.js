@@ -69,20 +69,20 @@ const LoginPage = () => {
 
   return (
     <div className="min-h-screen flex bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden">
-      {/* Animated Background Elements */}
+      
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
         <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      {/* Gradient Overlay */}
+      
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 via-transparent to-purple-900/50"></div>
 
-      {/* Left Panel - Branding & Features */}
+      
       <div className="relative z-10 hidden lg:flex flex-1 flex-col justify-between p-12 text-white">
         <div className="space-y-8">
-          {/* Logo */}
+         
           <div className="flex items-center space-x-3 group cursor-pointer">
             <div className="bg-gradient-to-br from-blue-500 to-cyan-500 p-3 rounded-2xl shadow-lg group-hover:shadow-cyan-500/50 transition-all duration-300">
               <Briefcase className="w-8 h-8" />
@@ -92,7 +92,7 @@ const LoginPage = () => {
             </span>
           </div>
 
-          {/* Hero Content */}
+          
           <div className="space-y-6 max-w-xl">
             <h1 className="text-6xl font-bold leading-tight">
               Welcome Back to Your
@@ -105,7 +105,7 @@ const LoginPage = () => {
             </p>
           </div>
 
-          {/* Feature Grid */}
+          
           <div className="grid grid-cols-2 gap-4 pt-8">
             {features.map((feature, index) => (
               <div
@@ -122,7 +122,7 @@ const LoginPage = () => {
           </div>
         </div>
 
-        {/* Footer Stats */}
+       
         <div className="flex items-center justify-between pt-8 border-t border-white/10">
           <div>
             <p className="text-3xl font-bold">500K+</p>
@@ -139,10 +139,10 @@ const LoginPage = () => {
         </div>
       </div>
 
-      {/* Right Panel - Login Form */}
+     
       <div className="relative z-10 flex flex-1 items-center justify-center px-6 py-12">
         <div className="w-full max-w-md">
-          {/* Mobile Logo */}
+         
           <div className="lg:hidden flex items-center justify-center space-x-3 mb-8">
             <div className="bg-gradient-to-br from-blue-500 to-cyan-500 p-3 rounded-2xl shadow-lg">
               <Briefcase className="w-7 h-7 text-white" />
@@ -150,7 +150,7 @@ const LoginPage = () => {
             <span className="text-3xl font-bold text-white">JobPortal</span>
           </div>
 
-          {/* Login Card */}
+         
           <div className="bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl p-8 md:p-10 border border-white/20">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
@@ -161,7 +161,7 @@ const LoginPage = () => {
               </p>
             </div>
 
-            {/* Error Message */}
+            
             {errorMsg && (
               <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl flex items-start space-x-3 animate-shake">
                 <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
@@ -169,9 +169,9 @@ const LoginPage = () => {
               </div>
             )}
 
-            {/* Login Form */}
+            
             <form onSubmit={handleLogin} className="space-y-5">
-              {/* Email Input */}
+              
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-700 flex items-center">
                   Email Address
@@ -190,7 +190,7 @@ const LoginPage = () => {
                 </div>
               </div>
 
-              {/* Password Input */}
+              
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-700 flex items-center">
                   Password
@@ -209,7 +209,7 @@ const LoginPage = () => {
                 </div>
               </div>
 
-              {/* Remember & Forgot Password */}
+             
               <div className="flex items-center justify-between text-sm">
                 <label className="flex items-center cursor-pointer group">
                   <input
@@ -228,7 +228,7 @@ const LoginPage = () => {
                 </Link>
               </div>
 
-              {/* Submit Button */}
+              
               <button
                 type="submit"
                 disabled={isLoading}
@@ -245,7 +245,7 @@ const LoginPage = () => {
               </button>
             </form>
 
-            {/* Divider */}
+           
             <div className="relative my-8">
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full border-t border-gray-300"></div>
@@ -257,7 +257,7 @@ const LoginPage = () => {
               </div>
             </div>
 
-            {/* Register Link */}
+            
             <div className="text-center">
               <p className="text-gray-600">
                 Don't have an account?{" "}
@@ -271,7 +271,7 @@ const LoginPage = () => {
             </div>
           </div>
 
-          {/* Trust Badges */}
+         
           <div className="mt-8 text-center text-sm text-gray-300">
             <p>Trusted by professionals at</p>
             <div className="flex items-center justify-center space-x-6 mt-3 opacity-60">

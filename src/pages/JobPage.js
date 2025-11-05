@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// Mock JobList component - replace with your actual component
+
 const JobList = ({ filters }) => {
   const jobs = [
     {
@@ -84,7 +84,7 @@ const JobPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-      {/* Header Section */}
+      
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="container mx-auto px-6 py-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -98,14 +98,14 @@ const JobPage = () => {
 
       <div className="container mx-auto px-6 py-10">
         <div className="grid lg:grid-cols-4 gap-8">
-          {/* Filters Sidebar */}
+          
           <aside className="lg:col-span-1">
             <div className="bg-white rounded-lg border border-slate-200 p-6 sticky top-6">
               <h2 className="text-lg font-semibold text-slate-900 mb-6">
                 Filters
               </h2>
 
-              {/* Search Input */}
+              
               <div className="mb-6">
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Search Jobs
@@ -119,7 +119,7 @@ const JobPage = () => {
                 />
               </div>
 
-              {/* Location Filter */}
+             
               <div className="mb-6">
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Location
@@ -136,7 +136,7 @@ const JobPage = () => {
                 </select>
               </div>
 
-              {/* Job Type Filter */}
+              
               <div className="mb-6">
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Job Type
@@ -154,7 +154,7 @@ const JobPage = () => {
                 </select>
               </div>
 
-              {/* Experience Level Filter */}
+              
               <div className="mb-6">
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Experience Level
@@ -172,7 +172,7 @@ const JobPage = () => {
                 </select>
               </div>
 
-              {/* Clear Filters Button */}
+              
               <button
                 onClick={() => {
                   setSearchTerm("");
@@ -187,9 +187,9 @@ const JobPage = () => {
             </div>
           </aside>
 
-          {/* Job Listings */}
+          
           <main className="lg:col-span-3">
-            {/* Results Header */}
+           
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
               <div>
                 <h2 className="text-2xl font-bold text-slate-900">
@@ -207,10 +207,10 @@ const JobPage = () => {
               </select>
             </div>
 
-            {/* Job List Component */}
+            
             <JobList filters={filters} />
 
-            {/* Pagination */}
+            
             <div className="mt-8 flex justify-center gap-2">
               <button className="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium transition">
                 Previous

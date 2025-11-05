@@ -42,7 +42,7 @@ const JobList = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       <div className="max-w-7xl mx-auto px-6 py-12">
-        {/* Header Section */}
+       
         <div className="text-center mb-12 animate-fade-in">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl mb-4 shadow-lg">
             <Briefcase className="w-8 h-8 text-white" />
@@ -55,12 +55,12 @@ const JobList = () => {
           </p>
         </div>
 
-        {/* Search Bar */}
+        
         <div className="mb-12">
           <SearchBar onSearch={handleSearch} />
         </div>
 
-        {/* Jobs Section Header */}
+        
         <div className="flex items-center justify-between mb-8">
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-2">
@@ -74,7 +74,7 @@ const JobList = () => {
           </div>
         </div>
 
-        {/* Content Area */}
+        
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20">
             <Loader2 className="w-12 h-12 text-blue-600 animate-spin mb-4" />
