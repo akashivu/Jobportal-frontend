@@ -7,6 +7,8 @@ import LoginPage from "./pages/LoginPage";
 import HomePage from './pages/HomePage';
 import JobPage from "./pages/JobPage";
 import JobList from './component/JobList';
+import About from './component/about';
+import Companies from './component/companies';
 function App() {
   return (
     <Router>
@@ -19,6 +21,8 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
            <Route path="/jobs" element={<JobPage />} />
             <Route path="/joblist" element={<JobList />} />
+            <Route path="/about" element={<About />} />
+             <Route path="/companies" element={<Companies />} />
 
         
         </Routes>
